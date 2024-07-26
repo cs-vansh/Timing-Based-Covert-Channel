@@ -19,6 +19,6 @@ def send_message(message, base_url):
 
 if __name__ == "__main__":
     base_url = "http://localhost:8000"
-    message = "test"
+    message = "test" # secret message
     send_message(message, base_url)
     print("Message sent!")
