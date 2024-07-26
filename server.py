@@ -50,7 +50,7 @@ def check_timeout():
         time.sleep(1)  # Check every second
         if last_request_time is not None and char_buffer:
             current_time = time.time()
-            if current_time - last_request_time > 20:
+            if current_time - last_request_time > 20:   # Increase the value of '20' if increasing the time delay by 20 seconds or more in client.py
                 complete_message = ''.join(char_buffer)
                 print(f"Complete message received : {complete_message}")
                 char_buffer = []  # Reset for next message
