@@ -4,6 +4,8 @@ A proof of concept for covert communication using timing intervals in HTTP reque
 ## Implementation
 This project is a proof of concept using a simple client-server model in Python, showing how binary data can be hidden using time delays between sent requests. 
 
+![image](https://github.com/user-attachments/assets/3cc1f850-dd78-47c1-a989-1fa1bce0590e)
+
 ### Client Script
 In the `client.py` file, the `message` is encoded to binary data. Each bit in the binary data determines the delay before sending the next request:
 - A '0' bit sends a request immediately.
